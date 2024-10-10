@@ -4,7 +4,7 @@ InTrD="../../BER2024-SOURCE"
 DName="ber2024-source"
 OutDir="../../BER2024/BER2024-FUSION"
 
-SubDir="efficientnet_b3_efficientnet_b3_ncod20_minus"
+SubDir="ncod20_efficientnet_b3_efficientnet_b3_step2_minus"
 
 strings=("train.csv" "test.csv")
 #strings=("test.csv")
