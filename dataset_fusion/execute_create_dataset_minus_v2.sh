@@ -4,10 +4,11 @@ InTrD="../../BER2024-SOURCE"
 DName="ber2024-source"
 OutDir="../../BER2024/BER2024-FUSION"
 
-SubDir="ncod53_efficientnet_b3_efficientnet_b3_v2"
+SubDir="ncod53_efficientnet_b3_efficientnet_b3_minus_v2"
 
 strings=("train_refface.csv" "test_refface.csv")
 outstr=("train.csv" "test.csv")
+
 
 ipynb-py-convert create_dataset.ipynb create_dataset.py
 
@@ -22,7 +23,8 @@ for ((i=0; i<${#strings[@]}; i++)); do
                                 --dataset-out-file $CsvOutFile \
                                 --dataset-name $DName \
                                 --sub-dir $SubDir \
-                                --output-dir $OutDir
+                                --output-dir $OutDir \
+                                --minus true
 done
 
 
